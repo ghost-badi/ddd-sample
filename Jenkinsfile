@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git(url: 'https://github.com/bnasslahsen/ddd-sample.git', credentialsId: 'git-login', branch: 'master')
+        git(url: 'https://github.com/ghost-badi/ddd-sample.git', credentialsId: 'git-login', branch: 'master')
       }
     }
     stage('Compile') {
