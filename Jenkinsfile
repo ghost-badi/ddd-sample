@@ -33,7 +33,7 @@ pipeline {
 
    stage('Quality') {
       steps {
-       withSonarQubeEnv('Sonar-ddd') {
+       withSonarQubeEnv('Sonar') {
           bat 'mvn sonar:sonar'
         }
     }
